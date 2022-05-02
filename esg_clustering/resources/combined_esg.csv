@@ -1,0 +1,516 @@
+,environment_score,governance_score,social_score,environment_grade,social_grade,governance_grade,Name
+AAL,225.0,200.0,200.0,B,B,B,American Airlines Group Inc.
+AAPL,355.0,255.0,275.0,BB,B,B,Apple Inc.
+ADBE,240.0,210.0,200.0,B,B,B,Adobe Systems Incorporated
+ADI,345.0,290.0,307.0,BB,BB,B,Analog Devices Inc.
+ADP,520.0,305.0,307.0,A,BB,BB,Automatic Data Processing Inc.
+ADSK,560.0,310.0,331.0,A,BB,BB,Autodesk Inc.
+AKAM,580.0,375.0,353.0,A,BB,BB,Akamai Technologies Inc.
+ALXN,200.0,200.0,201.0,B,B,B,Alexion Pharmaceuticals Inc.
+AMAT,543.0,318.0,318.0,A,BB,BB,Applied Materials Inc.
+AMGN,527.0,300.0,355.0,A,BB,BB,Amgen Inc.
+AMZN,658.0,305.0,303.0,AA,BB,BB,Amazon.com Inc.
+ATVI,280.0,300.0,331.0,B,BB,BB,Activision Blizzard Inc
+AVGO,240.0,220.0,215.0,B,B,B,Broadcom Limited
+BATRA,500.0,300.0,300.0,A,BB,BB,Liberty Media Corporation
+BATRK,500.0,300.0,300.0,A,BB,BB,Liberty Media Corporation
+BBBY,225.0,205.0,201.0,B,B,B,Bed Bath &amp; Beyond Inc.
+BIDU,225.0,205.0,207.0,B,B,B,Baidu Inc.
+BIIB,390.0,328.0,320.0,BB,BB,BB,Biogen Inc.
+BMRN,525.0,305.0,304.0,A,BB,BB,BioMarin Pharmaceutical Inc.
+CA,200.0,215.0,220.0,B,B,B,CA Inc.
+CERN,515.0,300.0,307.0,A,BB,BB,Cerner Corporation
+CHKP,545.0,300.0,310.0,A,BB,BB,Check Point Software Technologies Ltd.
+CHTR,500.0,300.0,300.0,A,BB,BB,Charter Communications Inc.
+CMCSA,505.0,310.0,356.0,A,BB,BB,Comcast Corporation
+COST,540.0,210.0,305.0,A,BB,B,Costco Wholesale Corporation
+CSCO,235.0,210.0,239.0,B,B,B,Cisco Systems Inc.
+CSX,545.0,308.0,315.0,A,BB,BB,CSX Corporation
+CTSH,600.0,300.0,407.0,AA,BBB,BB,Cognizant Technology Solutions Corporation
+CTXS,555.0,305.0,328.0,A,BB,BB,Citrix Systems Inc.
+DISCA,505.0,305.0,303.0,A,BB,BB,Discovery Communications Inc.
+DISH,210.0,205.0,257.0,B,B,B,DISH Network Corporation
+DLTR,205.0,200.0,230.0,B,B,B,Dollar Tree Inc.
+EA,395.0,225.0,303.0,BB,BB,B,Electronic Arts Inc.
+EBAY,515.0,300.0,300.0,A,BB,BB,eBay Inc.
+ENDP,500.0,312.0,300.0,A,BB,BB,Endo International plc
+EXPE,227.0,300.0,235.0,B,B,BB,Expedia Inc.
+FAST,230.0,200.0,303.0,B,BB,B,Fastenal Company
+FB,520.0,305.0,281.0,A,B,BB,Facebook Inc.
+FISV,400.0,300.0,300.0,BBB,BB,BB,Fiserv Inc.
+FOX,65.0,290.0,273.0,DDD,B,B,Twenty-First Century Fox Inc.
+FOXA,290.0,300.0,300.0,B,BB,BB,Twenty-First Century Fox Inc.
+GILD,500.0,300.0,303.0,A,BB,BB,Gilead Sciences Inc.
+GOOG,210.0,345.0,340.0,B,BB,BB,Alphabet Inc.
+GOOGL,290.0,325.0,200.0,B,B,BB,Alphabet Inc.
+HSIC,210.0,200.0,204.0,B,B,B,Henry Schein Inc.
+ILMN,500.0,300.0,303.0,A,BB,BB,Illumina Inc.
+INCY,505.0,300.0,312.0,A,BB,BB,Incyte Corporation
+INTC,350.0,465.0,325.0,BB,BB,BBB,Intel Corporation
+INTU,545.0,300.0,302.0,A,BB,BB,Intuit Inc.
+ISRG,530.0,281.0,262.0,A,B,B,Intuitive Surgical Inc.
+JD,500.0,310.0,236.0,A,B,BB,JD.com Inc.
+KHC,515.0,300.0,321.0,A,BB,BB,The Kraft Heinz Company
+LBTYA,550.0,310.0,353.0,A,BB,BB,Liberty Global plc
+LRCX,545.0,310.0,324.0,A,BB,BB,Lam Research Corporation
+MAR,210.0,210.0,207.0,B,B,B,Marriott International
+MAT,215.0,305.0,301.0,B,BB,BB,Mattel Inc.
+MDLZ,513.0,300.0,327.0,A,BB,BB,Mondelez International Inc.
+MNST,615.0,325.0,307.0,AA,BB,BB,Monster Beverage Corporation
+MSFT,415.0,205.0,232.0,BBB,B,B,Microsoft Corporation
+MU,535.0,310.0,308.0,A,BB,BB,Micron Technology Inc.
+MXIM,315.0,205.0,318.0,BB,BB,B,Maxim Integrated Products Inc.
+MYL,533.0,300.0,304.0,A,BB,BB,Mylan N.V.
+NCLH,555.0,305.0,302.0,A,BB,BB,Norwegian Cruise Line Holdings Ltd.
+NTAP,535.0,315.0,346.0,A,BB,BB,NetApp Inc.
+NTES,505.0,300.0,295.0,A,B,BB,NetEase Inc.
+NVDA,323.0,280.0,304.0,BB,BB,B,NVIDIA Corporation
+NXPI,525.0,305.0,331.0,A,BB,BB,NXP Semiconductors N.V.
+ORLY,500.0,300.0,300.0,A,BB,BB,'O''Reilly Automotive Inc.'
+PAYX,505.0,320.0,341.0,A,BB,BB,Paychex Inc.
+PCAR,530.0,305.0,382.0,A,BB,BB,PACCAR Inc.
+PYPL,400.0,318.0,230.0,BBB,B,BB,PayPal Holdings Inc.
+QCOM,404.0,300.0,300.0,BBB,BB,BB,QUALCOMM Incorporated
+REGN,525.0,300.0,301.0,A,BB,BB,Regeneron Pharmaceuticals Inc.
+ROST,385.0,300.0,304.0,BB,BB,BB,Ross Stores Inc.
+SBAC,250.0,215.0,251.0,B,B,B,SBA Communications Corporation
+SBUX,515.0,303.0,335.0,A,BB,BB,Starbucks Corporation
+SIRI,240.0,205.0,301.0,B,BB,B,Sirius XM Holdings Inc.
+SRCL,575.0,300.0,319.0,A,BB,BB,Stericycle Inc.
+STX,515.0,315.0,310.0,A,BB,BB,Seagate Technology PLC
+SWKS,505.0,270.0,305.0,A,BB,B,Skyworks Solutions Inc.
+SYMC,500.0,300.0,300.0,A,BB,BB,Symantec Corporation
+TMUS,391.0,225.0,308.0,BB,BB,B,T-Mobile US Inc.
+TRIP,210.0,200.0,214.0,B,B,B,TripAdvisor Inc.
+TSCO,503.0,305.0,300.0,A,BB,BB,Tractor Supply Company
+TSLA,563.0,255.0,146.0,A,CC,B,Tesla Motors Inc.
+TXN,500.0,300.0,300.0,A,BB,BB,Texas Instruments Incorporated
+ULTA,200.0,205.0,228.0,B,B,B,Ulta Salon Cosmetics &amp; Fragrance Inc.
+VRSK,650.0,300.0,365.0,AA,BB,BB,Verisk Analytics Inc.
+VRTX,294.0,300.0,300.0,B,BB,BB,Vertex Pharmaceuticals Incorporated
+WBA,510.0,300.0,301.0,A,BB,BB,Walgreens Boots Alliance Inc.
+WDC,415.0,240.0,305.0,BBB,BB,B,Western Digital Corporation
+XLNX,360.0,300.0,304.0,BB,BB,BB,Xilinx Inc.
+NLSN,540.0,300.0,300.0,A,BB,BB,Nielsen Holdings plc
+PVH,363.0,350.0,326.0,BB,BB,BB,PVH Corp.
+GPS,520.0,328.0,352.0,A,BB,BB,"The Gap, Inc."
+ALK,500.0,220.0,307.0,A,BB,B,"Alaska Air Group, Inc."
+PENN,341.0,210.0,323.0,BB,BB,B,"Penn National Gaming, Inc."
+DXC,510.0,308.0,355.0,A,BB,BB,DXC Technology Company
+VNO,535.0,310.0,318.0,A,BB,BB,Vornado Realty Trust
+UA,240.0,200.0,311.0,B,BB,B,"Under Armour, Inc."
+HII,560.0,310.0,319.0,A,BB,BB,"Huntington Ingalls Industries, Inc."
+IPGP,477.0,245.0,302.0,BBB,BB,B,IPG Photonics Corporation
+OGN,565.0,300.0,301.0,A,BB,BB,Organon & Co.
+RL,405.0,305.0,262.0,BBB,B,BB,Ralph Lauren Corporation
+PNW,629.0,300.0,479.0,AA,BBB,BB,Pinnacle West Capital Corporation
+PBCT,225.0,228.0,300.0,B,BB,B,"Peoples United Financial, Inc."
+AIZ,230.0,225.0,300.0,B,BB,B,"Assurant, Inc."
+ANET,414.0,285.0,308.0,BBB,BB,B,"Arista Networks, Inc."
+LW,348.0,305.0,251.0,BB,B,BB,"Lamb Weston Holdings, Inc."
+NRG,371.0,223.0,296.0,BB,B,B,"NRG Energy, Inc."
+WYNN,205.0,205.0,201.0,B,B,B,"Wynn Resorts, Limited"
+FRT,525.0,300.0,302.0,A,BB,BB,Federal Realty Investment Trust
+NWL,520.0,330.0,306.0,A,BB,BB,Newell Brands Inc.
+SEE,555.0,245.0,318.0,A,BB,B,Sealed Air Corporation
+IVZ,278.0,300.0,220.0,B,B,BB,Invictus Energy Limited
+PNR,402.0,335.0,351.0,BBB,BB,BB,Pentair plc
+TPR,515.0,313.0,364.0,A,BB,BB,"Tapestry, Inc."
+GL,215.0,215.0,238.0,B,B,B,Group Lease Public Company Limited
+MHK,520.0,238.0,281.0,A,B,B,"Mohawk Industries, Inc."
+JNPR,225.0,205.0,332.0,B,BB,B,"Juniper Networks, Inc."
+CDAY,560.0,320.0,379.0,A,BB,BB,Ceridian HCM Holding Inc.
+BWA,245.0,228.0,205.0,B,B,B,BorgWarner Inc.
+ZION,200.0,200.0,200.0,B,B,B,"Zions Bancorporation, National Association"
+,240.0,213.0,300.0,B,BB,B,Zion
+UHS,415.0,338.0,321.0,BBB,BB,BB,"Universal Health Services, Inc."
+ALLE,542.0,315.0,322.0,A,BB,BB,Allegion plc
+NI,321.0,213.0,298.0,BB,B,B,NiSource Inc.
+SNA,500.0,256.0,300.0,A,BB,B,Snap-on Incorporated
+SEDG,740.0,250.0,302.0,AA,BB,B,"SolarEdge Technologies, Inc."
+RE,448.0,290.0,272.0,BBB,B,B,"Everest Re Group, Ltd."
+DVA,220.0,300.0,300.0,B,BB,BB,DaVita Inc.
+XRAY,460.0,230.0,253.0,BBB,B,B,DENTSPLY SIRONA Inc.
+WRK,535.0,300.0,318.0,A,BB,BB,WestRock Company
+JKHY,365.0,310.0,277.0,BB,B,BB,"Jack Henry & Associates, Inc."
+HST,505.0,318.0,318.0,A,BB,BB,"Host Hotels & Resorts, Inc."
+REG,570.0,365.0,372.0,A,BB,BB,Regency Centers Corporation
+APA,410.0,325.0,323.0,BBB,BB,BB,Apache Corporation
+CMA,280.0,230.0,300.0,B,BB,B,Comerica Incorporated
+WHR,505.0,300.0,320.0,A,BB,BB,Whirlpool Corporation
+LUMN,520.0,338.0,326.0,A,BB,BB,"Lumen Technologies, Inc."
+AOS,505.0,300.0,309.0,A,BB,BB,A. O. Smith Corporation
+HAS,265.0,320.0,327.0,B,BB,BB,"Hasbro, Inc."
+CBOE,515.0,300.0,307.0,A,BB,BB,"Cboe Global Markets, Inc."
+FBHS,505.0,300.0,302.0,A,BB,BB,"Fortune Brands Home & Security, Inc."
+RHI,255.0,310.0,333.0,B,BB,BB,Robert Half International Inc.
+LNC,550.0,308.0,305.0,A,BB,BB,Lincoln National Corporation
+FFIV,260.0,215.0,220.0,B,B,B,"F5 Networks, Inc."
+LDOS,540.0,300.0,300.0,A,BB,BB,"Leidos Holdings, Inc."
+NWSA,505.0,310.0,306.0,A,BB,BB,News Corporation
+NWS,500.0,308.0,301.0,A,BB,BB,News Corporation
+MKTX,255.0,210.0,214.0,B,B,B,MarketAxess Holdings Inc.
+ABMD,500.0,305.0,324.0,A,BB,BB,"Abiomed, Inc."
+IRM,500.0,300.0,300.0,A,BB,BB,Iron Mountain Incorporated
+PHM,200.0,285.0,205.0,B,B,B,"PulteGroup, Inc."
+PTC,555.0,400.0,316.0,A,BB,BBB,PTC Inc.
+HWM,515.0,320.0,306.0,A,BB,BB,Howmet Aerospace Inc.
+UAL,205.0,238.0,292.0,B,B,B,"United Airlines Holdings, Inc."
+IPG,500.0,300.0,300.0,A,BB,BB,"The Interpublic Group of Companies, Inc."
+CPB,532.0,305.0,342.0,A,BB,BB,Campbell Soup Company
+CHRW,555.0,330.0,332.0,A,BB,BB,"C.H. Robinson Worldwide, Inc."
+PKG,500.0,300.0,303.0,A,BB,BB,Packaging Corporation of America
+BBWI,515.0,310.0,351.0,A,BB,BB,"Bath & Body Works, Inc."
+FMC,515.0,305.0,305.0,A,BB,BB,FMC Corporation
+PWR,542.0,305.0,391.0,A,BB,BB,"Quanta Services, Inc."
+TFX,200.0,200.0,200.0,B,B,B,Teleflex Incorporated
+TECH,520.0,300.0,269.0,A,B,BB,Bio-Techne Corporation
+ATO,518.0,300.0,301.0,A,BB,BB,Atmos Energy Corporation
+AAP,282.0,228.0,313.0,B,BB,B,"Advance Auto Parts, Inc."
+QRVO,510.0,300.0,309.0,A,BB,BB,"Qorvo, Inc."
+ROL,500.0,300.0,320.0,A,BB,BB,"Rollins, Inc."
+WRB,360.0,300.0,294.0,BB,B,BB,W. R. Berkley Corporation
+KIM,545.0,320.0,318.0,A,BB,BB,Kimco Realty Corporation
+EVRG,563.0,300.0,339.0,A,BB,BB,"Evergy, Inc."
+LNT,552.0,300.0,305.0,A,BB,BB,Alliant Energy Corporation
+CF,530.0,305.0,343.0,A,BB,BB,"CF Industries Holdings, Inc."
+TXT,595.0,300.0,348.0,A,BB,BB,Textron Inc.
+AES,505.0,350.0,309.0,A,BB,BB,The AES Corporation
+NLOK,520.0,345.0,301.0,A,BB,BB,NortonLifeLock Inc
+CAH,518.0,319.0,310.0,A,BB,BB,"Cardinal Health, Inc."
+L,505.0,305.0,301.0,A,BB,BB,Loews Corporation
+MOS,510.0,300.0,336.0,A,BB,BB,The Mosaic Company
+MAS,507.0,305.0,302.0,A,BB,BB,Masco Corporation
+CZR,285.0,200.0,208.0,B,B,B,"Caesars Entertainment, Inc."
+SJM,500.0,305.0,307.0,A,BB,BB,The J. M. Smucker Company
+FDS,633.0,311.0,332.0,AA,BB,BB,FactSet Research Systems Inc.
+MRO,530.0,305.0,306.0,A,BB,BB,Melrose Industries PLC
+OMC,553.0,310.0,330.0,A,BB,BB,Omnicom Group Inc.
+LKQ,505.0,305.0,300.0,A,BB,BB,LKQ Corporation
+DPZ,205.0,200.0,201.0,B,B,B,"Dominos Pizza, Inc."
+BEN,326.0,305.0,350.0,BB,BB,BB,"Franklin Resources, Inc."
+CRL,510.0,245.0,322.0,A,BB,B,"Charles River Laboratories International, Inc."
+IEX,360.0,240.0,306.0,BB,BB,B,IDEX Corporation
+EMN,588.0,315.0,389.0,A,BB,BB,Eastman Chemical Company
+ENPH,703.0,315.0,325.0,AA,BB,BB,"Enphase Energy, Inc."
+GNRC,647.0,245.0,358.0,AA,BB,B,Generac Holdings Inc.
+AVY,540.0,325.0,347.0,A,BB,BB,Avery Dennison Corporation
+WAB,616.0,310.0,330.0,AA,BB,BB,Wabtec Corporation
+J,200.0,210.0,202.0,B,B,B,JAS Asset Public Company Limited
+3086,225.0,316.0,211.0,B,B,BB,J
+DGX,230.0,205.0,300.0,B,BB,B,Quest Diagnostics Incorporated
+CTLT,468.0,305.0,301.0,BBB,BB,BB,"Catalent, Inc."
+MPWR,330.0,235.0,287.0,BB,B,B,"Monolithic Power Systems, Inc."
+TRMB,510.0,310.0,326.0,A,BB,BB,Trimble Inc.
+UDR,220.0,230.0,304.0,B,BB,B,"UDR, Inc."
+BIO,285.0,300.0,227.0,B,B,BB,"Bio-Rad Laboratories, Inc."
+CAG,505.0,300.0,300.0,A,BB,BB,"Conagra Brands, Inc."
+KMX,234.0,305.0,238.0,B,B,BB,"CarMax, Inc."
+CTRA,500.0,300.0,282.0,A,B,BB,Coterra Energy Inc.
+HOLX,520.0,300.0,338.0,A,BB,BB,"Hologic, Inc."
+CNP,550.0,260.0,310.0,A,BB,B,"CenterPoint Energy, Inc."
+BXP,552.0,305.0,351.0,A,BB,BB,"Boston Properties, Inc."
+DRI,645.0,310.0,334.0,AA,BB,BB,"Darden Restaurants, Inc."
+CE,500.0,300.0,251.0,A,B,BB,Credito Emiliano
+BRO,295.0,300.0,303.0,B,BB,BB,"Brown & Brown, Inc."
+BR,595.0,340.0,314.0,A,BB,BB,"Broadridge Financial Solutions, Inc."
+NVR,275.0,205.0,200.0,B,B,B,"NVR, Inc."
+VTRS,356.0,300.0,301.0,BB,BB,BB,Viatris Inc.
+ETSY,227.0,200.0,215.0,B,B,B,"Etsy, Inc."
+TYL,370.0,305.0,306.0,BB,BB,BB,"Tyler Technologies, Inc."
+IP,665.0,328.0,326.0,AA,BB,BB,International Paper Company
+SBNY,256.0,215.0,210.0,B,B,B,Signature Bank
+PAYC,456.0,315.0,305.0,BBB,BB,BB,"Paycom Software, Inc."
+POOL,593.0,310.0,370.0,A,BB,BB,Pool Corporation
+XYL,400.0,215.0,276.0,BBB,B,B,Xylem Inc.
+FLT,385.0,300.0,229.0,BB,B,BB,"FLEETCOR Technologies, Inc."
+TTWO,205.0,305.0,312.0,B,BB,BB,"Take-Two Interactive Software, Inc."
+TER,462.0,315.0,332.0,BBB,BB,BB,"Teradyne, Inc."
+CINF,225.0,250.0,274.0,B,B,B,Cincinnati Financial Corporation
+CMS,550.0,325.0,667.0,A,AA,BB,CMS Energy Corporation
+GPC,510.0,320.0,211.0,A,B,BB,Genuine Parts Company
+PEAK,535.0,335.0,331.0,A,BB,BB,"Healthpeak Properties, Inc."
+TDY,500.0,298.0,300.0,A,BB,B,Teledyne Technologies Incorporated
+WAT,320.0,240.0,304.0,BB,BB,B,Waters Corporation
+EXPD,510.0,300.0,302.0,A,BB,BB,"Expeditors International of Washington, Inc."
+MGM,510.0,235.0,302.0,A,BB,B,MGM Resorts International
+PFG,540.0,300.0,320.0,A,BB,BB,"Principal Financial Group, Inc."
+RCL,500.0,300.0,300.0,A,BB,BB,Royal Caribbean Group
+JBHT,535.0,300.0,391.0,A,BB,BB,"J.B. Hunt Transport Services, Inc."
+COO,500.0,300.0,300.0,A,BB,BB,"The Cooper Companies, Inc."
+CLX,593.0,355.0,361.0,A,BB,BB,The Clorox Company
+VTR,500.0,300.0,301.0,A,BB,BB,"Ventas, Inc."
+HPE,410.0,250.0,311.0,BBB,BB,B,Hewlett Packard Enterprise Company
+VIAC,500.0,310.0,322.0,A,BB,BB,ViacomCBS Inc.
+PKI,520.0,325.0,314.0,A,BB,BB,"PerkinElmer, Inc."
+ESS,377.0,210.0,304.0,BB,BB,B,"Essex Property Trust, Inc."
+RJF,500.0,305.0,309.0,A,BB,BB,"Raymond James Financial, Inc."
+DRE,513.0,300.0,306.0,A,BB,BB,Duke Realty Corporation
+CCL,560.0,310.0,359.0,A,BB,BB,Carnival Corporation & Plc
+STE,510.0,305.0,301.0,A,BB,BB,STERIS plc
+MTB,500.0,280.0,300.0,A,BB,B,M&T Bank Corporation
+HBAN,243.0,285.0,300.0,B,BB,B,Huntington Bancshares Incorporated
+RF,455.0,300.0,302.0,BBB,BB,BB,Eurazeo SE
+CFG,225.0,200.0,220.0,B,B,B,"Citizens Financial Group, Inc."
+ETR,515.0,310.0,306.0,A,BB,BB,Entergy Corporation
+AEE,522.0,300.0,362.0,A,BB,BB,Ameren Corporation
+K,315.0,323.0,380.0,BB,BB,BB,Kellogg Company
+IR,525.0,310.0,314.0,A,BB,BB,Ingersoll Rand Inc.
+FE,505.0,300.0,303.0,A,BB,BB,FirstEnergy Corp.
+MAA,285.0,210.0,261.0,B,B,B,"Mid-America Apartment Communities, Inc."
+PPL,520.0,300.0,301.0,A,BB,BB,PPL Corporation
+IT,540.0,300.0,303.0,A,BB,BB,"Gartner, Inc."
+LYV,404.0,275.0,300.0,BBB,BB,B,"Live Nation Entertainment, Inc."
+GRMN,212.0,200.0,200.0,B,B,B,Garmin Ltd.
+VRSN,575.0,305.0,348.0,A,BB,BB,"VeriSign, Inc."
+BBY,465.0,305.0,229.0,BBB,B,BB,"Best Buy Co., Inc."
+URI,497.0,300.0,309.0,BBB,BB,BB,"United Rentals, Inc."
+DTE,557.0,210.0,310.0,A,BB,B,DTE Energy Company
+KEY,515.0,300.0,308.0,A,BB,BB,KeyCorp
+MLM,573.0,300.0,273.0,A,B,BB,"Martin Marietta Materials, Inc."
+FANG,393.0,320.0,263.0,BB,B,BB,"Diamondback Energy, Inc."
+EIX,700.0,315.0,573.0,AA,A,BB,Edison International
+HIG,500.0,305.0,305.0,A,BB,BB,"The Hartford Financial Services Group, Inc."
+NTRS,265.0,225.0,224.0,B,B,B,Northern Trust Corporation
+ALB,545.0,305.0,345.0,A,BB,BB,Albemarle Corporation
+CHD,568.0,348.0,341.0,A,BB,BB,"Church & Dwight Co., Inc."
+DOV,515.0,300.0,302.0,A,BB,BB,Dover Corporation
+SYF,330.0,300.0,322.0,BB,BB,BB,Synchrony Financial
+VMC,565.0,300.0,319.0,A,BB,BB,Vulcan Materials Company
+DAL,505.0,270.0,306.0,A,BB,B,"Delta Air Lines, Inc."
+EPAM,540.0,330.0,338.0,A,BB,BB,"EPAM Systems, Inc."
+FTV,540.0,305.0,326.0,A,BB,BB,Fortive Corporation
+CDW,265.0,200.0,213.0,B,B,B,CDW Corporation
+GWW,255.0,240.0,385.0,B,BB,B,"W.W. Grainger, Inc."
+ZBRA,295.0,300.0,301.0,B,BB,BB,Zebra Technologies Corporation
+ZBH,510.0,300.0,331.0,A,BB,BB,"Zimmer Biomet Holdings, Inc."
+LUV,270.0,205.0,332.0,B,BB,B,Southwest Airlines Co.
+HRL,540.0,300.0,320.0,A,BB,BB,Hormel Foods Corporation
+LH,500.0,300.0,300.0,A,BB,BB,Laboratory Corporation of America Holdings
+EXR,587.0,220.0,262.0,A,B,B,Extra Space Storage Inc.
+MKC,500.0,300.0,300.0,A,BB,BB,"McCormick & Company, Incorporated"
+OKE,381.0,365.0,324.0,BB,BB,BB,"ONEOK, Inc."
+VFC,500.0,300.0,300.0,A,BB,BB,V.F. Corporation
+ANSS,585.0,275.0,333.0,A,BB,B,"ANSYS, Inc."
+TWTR,215.0,200.0,215.0,B,B,B,"Twitter, Inc."
+O,500.0,300.0,300.0,A,BB,BB,Realty Income Corporation
+EFX,390.0,300.0,324.0,BB,BB,BB,Equifax Inc.
+HAL,257.0,210.0,233.0,B,B,B,HAL Trust
+NUE,263.0,215.0,323.0,B,BB,B,Nucor Corporation
+HES,380.0,300.0,321.0,BB,BB,BB,Hess Corporation
+LEN,278.0,210.0,303.0,B,BB,B,Lennar Corporation
+SWK,525.0,305.0,321.0,A,BB,BB,"Stanley Black & Decker, Inc."
+ABC,523.0,329.0,310.0,A,BB,BB,AmerisourceBergen Corporation
+FRC,290.0,283.0,319.0,B,BB,B,First Republic Bank
+BKR,500.0,300.0,302.0,A,BB,BB,Baker Hughes Company
+AWK,598.0,300.0,399.0,A,BB,BB,"American Water Works Company, Inc."
+WY,643.0,300.0,325.0,AA,BB,BB,Weyerhaeuser Company
+WST,535.0,305.0,330.0,A,BB,BB,"West Pharmaceutical Services, Inc."
+ARE,600.0,360.0,362.0,AA,BB,BB,"Alexandria Real Estate Equities, Inc."
+NDAQ,510.0,305.0,314.0,A,BB,BB,"Nasdaq, Inc."
+CPRT,265.0,200.0,203.0,B,B,B,"Copart, Inc."
+ED,571.0,315.0,362.0,A,BB,BB,"Consolidated Edison, Inc."
+ES,559.0,305.0,427.0,A,BBB,BB,Eversource Energy
+KEYS,515.0,305.0,321.0,A,BB,BB,"Keysight Technologies, Inc."
+DHI,240.0,200.0,203.0,B,B,B,"D.R. Horton, Inc."
+WEC,635.0,300.0,431.0,AA,BBB,BB,"WEC Energy Group, Inc."
+MTCH,240.0,316.0,374.0,B,BB,BB,"Match Group, Inc."
+FITB,445.0,255.0,322.0,BBB,BB,B,Fifth Third Bancorp
+BLL,500.0,300.0,300.0,A,BB,BB,Ball Corporation
+AME,525.0,245.0,305.0,A,BB,B,"AMETEK, Inc."
+AJG,530.0,310.0,344.0,A,BB,BB,Arthur J. Gallagher & Co.
+SIVB,510.0,300.0,323.0,A,BB,BB,SVB Financial Group
+LYB,592.0,320.0,354.0,A,BB,BB,LyondellBasell Industries N.V.
+CBRE,210.0,210.0,215.0,B,B,B,"CBRE Group, Inc."
+CMI,530.0,305.0,348.0,A,BB,BB,Cummins Inc.
+MTD,505.0,240.0,300.0,A,BB,B,Mettler-Toledo International Inc.
+LVS,505.0,305.0,302.0,A,BB,BB,Las Vegas Sands Corp.
+EQR,240.0,200.0,206.0,B,B,B,Equity Residential
+RMD,335.0,300.0,351.0,BB,BB,BB,ResMed Inc.
+TSN,563.0,315.0,384.0,A,BB,BB,"Tyson Foods, Inc."
+TDG,500.0,300.0,300.0,A,BB,BB,TransDigm Group Incorporated
+ODFL,387.0,280.0,378.0,BB,BB,B,"Old Dominion Freight Line, Inc."
+PEG,500.0,205.0,300.0,A,BB,B,Public Service Enterprise Group Incorporated
+AVB,500.0,298.0,300.0,A,BB,B,"AvalonBay Communities, Inc."
+DFS,355.0,310.0,327.0,BB,BB,BB,Discover Financial Services
+ROK,270.0,210.0,222.0,B,B,B,"Rockwell Automation, Inc."
+KR,505.0,300.0,319.0,A,BB,BB,The Kroger Co.
+VLO,550.0,348.0,357.0,A,BB,BB,Valero Energy Corporation
+IFF,505.0,300.0,304.0,A,BB,BB,International Flavors & Fragrances Inc.
+TROW,510.0,310.0,345.0,A,BB,BB,"T. Rowe Price Group, Inc."
+AMP,381.0,272.0,311.0,BB,BB,B,"Ameriprise Financial, Inc."
+STT,250.0,250.0,321.0,B,BB,B,State Street Corporation
+CTVA,617.0,323.0,410.0,AA,BBB,BB,"Corteva, Inc."
+ALL,515.0,220.0,300.0,A,BB,B,The Allstate Corporation
+GLW,200.0,200.0,200.0,B,B,B,Corning Incorporated
+OXY,413.0,300.0,374.0,BBB,BB,BB,Occidental Petroleum Corporation
+DVN,385.0,300.0,305.0,BB,BB,BB,Devon Energy Corporation
+YUM,510.0,300.0,305.0,A,BB,BB,"Yum! Brands, Inc."
+WMB,350.0,300.0,300.0,BB,BB,BB,"The Williams Companies, Inc."
+APTV,510.0,305.0,328.0,A,BB,BB,Aptiv PLC
+ALGN,235.0,255.0,265.0,B,B,B,"Align Technology, Inc."
+WELL,462.0,300.0,315.0,BBB,BB,BB,WELL Health Technologies Corp.
+PPG,350.0,260.0,305.0,BB,BB,B,"PPG Industries, Inc."
+XEL,277.0,205.0,208.0,B,B,B,Xcel Energy Inc.
+DXCM,210.0,210.0,228.0,B,B,B,"DexCom, Inc."
+PSX,238.0,330.0,451.0,B,BBB,BB,Phillips 66
+MSI,515.0,352.0,325.0,A,BB,BB,"Motorola Solutions, Inc."
+CMG,215.0,205.0,213.0,B,B,B,"Chipotle Mexican Grill, Inc."
+HPQ,245.0,200.0,212.0,B,B,B,HP Inc.
+HLT,342.0,220.0,223.0,BB,B,B,Hilton Worldwide Holdings Inc.
+CDNS,540.0,275.0,310.0,A,BB,B,"Cadence Design Systems, Inc."
+MCK,500.0,330.0,320.0,A,BB,BB,McKesson Corporation
+KMI,485.0,364.0,341.0,BBB,BB,BB,"Kinder Morgan, Inc."
+CTAS,500.0,300.0,300.0,A,BB,BB,Cintas Corporation
+RSG,286.0,226.0,270.0,B,B,B,"Republic Services, Inc."
+SYY,545.0,295.0,353.0,A,BB,B,Sysco Corporation
+AZO,220.0,200.0,214.0,B,B,B,"AutoZone, Inc."
+MCHP,500.0,300.0,297.0,A,B,BB,Microchip Technology Incorporated
+PH,315.0,220.0,303.0,BB,BB,B,Parker-Hannifin Corporation
+A,313.0,210.0,224.0,BB,B,B,"Agilent Technologies, Inc."
+CARR,210.0,226.0,258.0,B,B,B,Carrs Group plc
+IDXX,553.0,305.0,401.0,A,BBB,BB,"IDEXX Laboratories, Inc."
+DD,620.0,315.0,320.0,AA,BB,BB,"DuPont de Nemours, Inc."
+TT,700.0,330.0,375.0,AA,BB,BB,Trane Technologies plc
+HSY,510.0,305.0,300.0,A,BB,BB,The Hershey Company
+MSCI,535.0,300.0,300.0,A,BB,BB,MSCI Inc.
+TRV,500.0,300.0,300.0,A,BB,BB,"The Travelers Companies, Inc."
+GPN,315.0,273.0,311.0,BB,BB,B,Global Payments Inc.
+AFL,468.0,235.0,300.0,BBB,BB,B,Aflac Incorporated
+DLR,545.0,320.0,309.0,A,BB,BB,"Digital Realty Trust, Inc."
+GIS,505.0,308.0,321.0,A,BB,BB,"General Mills, Inc."
+ADM,700.0,318.0,358.0,AA,BB,BB,Archer-Daniels-Midland Company
+PRU,405.0,315.0,326.0,BBB,BB,BB,"Prudential Financial, Inc."
+BAX,500.0,300.0,319.0,A,BB,BB,Baxter International Inc.
+LHX,447.0,260.0,264.0,BBB,B,B,"L3Harris Technologies, Inc."
+SRE,665.0,313.0,365.0,AA,BB,BB,Sempra Energy
+SNPS,570.0,305.0,310.0,A,BB,BB,"Synopsys, Inc."
+FTNT,590.0,300.0,303.0,A,BB,BB,"Fortinet, Inc."
+STZ,411.0,280.0,301.0,BBB,BB,B,"Constellation Brands, Inc."
+MPC,482.0,300.0,450.0,BBB,BBB,BB,Marathon Petroleum Corporation
+IQV,398.0,326.0,302.0,BB,BB,BB,IQVIA Holdings Inc.
+CNC,528.0,310.0,308.0,A,BB,BB,Centene Corporation
+DOW,200.0,200.0,204.0,B,B,B,Dow Inc.
+ROP,570.0,340.0,330.0,A,BB,BB,"Roper Technologies, Inc."
+TEL,200.0,200.0,200.0,B,B,B,TE Connectivity Ltd.
+APH,518.0,485.0,302.0,A,BB,BBB,Amphenol Corporation
+AEP,500.0,300.0,300.0,A,BB,BB,Anglo-Eastern Plantations Plc
+KMB,525.0,315.0,362.0,A,BB,BB,Kimberly-Clark Corporation
+AIG,540.0,300.0,305.0,A,BB,BB,"American International Group, Inc."
+INFO,580.0,300.0,304.0,A,BB,BB,IHS Markit Ltd.
+SPG,260.0,215.0,270.0,B,B,B,"Simon Property Group, Inc."
+DG,270.0,200.0,248.0,B,B,B,Dollar General Corporation
+BK,500.0,300.0,300.0,A,BB,BB,The Bank of New York Mellon Corporation
+NEM,403.0,305.0,343.0,BBB,BB,BB,Newmont Corporation
+HUM,235.0,240.0,305.0,B,BB,B,Humana Inc.
+JCI,500.0,290.0,300.0,A,BB,B,Johnson Controls International plc
+PXD,513.0,340.0,413.0,A,BBB,BB,Pioneer Natural Resources Company
+ECL,540.0,305.0,339.0,A,BB,BB,Ecolab Inc.
+EMR,600.0,315.0,322.0,AA,BB,BB,Emerson Electric Co.
+FCX,360.0,300.0,305.0,BB,BB,BB,Freeport-McMoRan Inc.
+SLB,545.0,220.0,306.0,A,BB,B,Schlumberger Limited
+KLAC,500.0,300.0,300.0,A,BB,BB,KLA Corporation
+EXC,632.0,323.0,512.0,AA,A,BB,Exelon Corporation
+MET,570.0,305.0,300.0,A,BB,BB,"MetLife, Inc."
+AON,300.0,243.0,331.0,BB,BB,B,Aon Plc
+GD,500.0,300.0,303.0,A,BB,BB,General Dynamics Corporation
+NOC,500.0,300.0,304.0,A,BB,BB,Northrop Grumman Corporation
+MRNA,500.0,300.0,300.0,A,BB,BB,"Moderna, Inc."
+COF,505.0,325.0,322.0,A,BB,BB,Capital One Financial Corporation
+MCO,505.0,245.0,311.0,A,BB,B,Moodys Corporation
+PSA,240.0,205.0,257.0,B,B,B,Public Storage
+APD,700.0,300.0,368.0,AA,BB,BB,"Air Products and Chemicals, Inc."
+WM,647.0,290.0,395.0,AA,BB,B,"Waste Management, Inc."
+EQIX,540.0,320.0,365.0,A,BB,BB,"Equinix, Inc. (REIT)"
+BSX,510.0,300.0,424.0,A,BBB,BB,Boston Scientific Corporation
+ETN,520.0,300.0,307.0,A,BB,BB,Eaton Corporation plc
+PGR,346.0,250.0,347.0,BB,BB,B,The Progressive Corporation
+D,510.0,300.0,304.0,A,BB,BB,"Dominion Energy, Inc."
+EW,290.0,320.0,326.0,B,BB,BB,Edwards Lifesciences Corporation
+FDX,330.0,275.0,270.0,BB,B,B,FedEx Corporation
+EOG,423.0,240.0,256.0,BBB,B,B,"EOG Resources, Inc."
+FIS,570.0,310.0,340.0,A,BB,BB,"Fidelity National Information Services, Inc."
+NSC,352.0,335.0,358.0,BB,BB,BB,Norfolk Southern Corporation
+ICE,500.0,305.0,302.0,A,BB,BB,"Intercontinental Exchange, Inc."
+CL,520.0,310.0,315.0,A,BB,BB,Colgate-Palmolive Company
+HCA,525.0,310.0,345.0,A,BB,BB,"HCA Healthcare, Inc."
+BDX,607.0,320.0,404.0,AA,BBB,BB,"Becton, Dickinson and Company"
+SO,535.0,310.0,353.0,A,BB,BB,The Southern Company
+ITW,550.0,315.0,332.0,A,BB,BB,Illinois Tool Works Inc.
+CCI,551.0,305.0,341.0,A,BB,BB,Crown Castle International Corp. (REIT)
+SHW,395.0,240.0,288.0,BB,B,B,The Sherwin-Williams Company
+MMC,500.0,300.0,300.0,A,BB,BB,"Marsh & McLennan Companies, Inc."
+GM,410.0,205.0,338.0,BBB,BB,B,General Motors Company
+CI,499.0,343.0,324.0,BBB,BB,BB,Cigna Corporation
+F,245.0,200.0,234.0,B,B,B,Ford Motor Company
+DUK,605.0,321.0,322.0,AA,BB,BB,Duke Energy Corporation
+CME,365.0,300.0,240.0,BB,B,BB,CME Group Inc.
+TFC,425.0,305.0,409.0,BBB,BBB,BB,Truist Financial Corporation
+TJX,500.0,300.0,300.0,A,BB,BB,"The TJX Companies, Inc."
+USB,368.0,290.0,300.0,BB,BB,B,U.S. Bancorp
+PNC,420.0,300.0,323.0,BBB,BB,BB,"The PNC Financial Services Group, Inc."
+ZTS,505.0,315.0,362.0,A,BB,BB,Zoetis Inc.
+MO,525.0,366.0,300.0,A,BB,BB,"Altria Group, Inc."
+SYK,500.0,315.0,305.0,A,BB,BB,Stryker Corporation
+SPGI,473.0,300.0,308.0,BBB,BB,BB,S&P Global Inc.
+BKNG,500.0,300.0,302.0,A,BB,BB,Booking Holdings Inc
+MMM,505.0,320.0,343.0,A,BB,BB,3M Company
+GE,500.0,300.0,300.0,A,BB,BB,Gefran
+TGT,613.0,315.0,352.0,AA,BB,BB,Target Corporation
+NOW,590.0,320.0,334.0,A,BB,BB,"ServiceNow, Inc."
+ANTM,505.0,300.0,306.0,A,BB,BB,"Anthem, Inc."
+LMT,505.0,308.0,309.0,A,BB,BB,Lockheed Martin Corporation
+AMT,515.0,300.0,332.0,A,BB,BB,American Tower Corporation (REIT)
+EL,500.0,300.0,300.0,A,BB,BB,EssilorLuxottica Société anonyme
+PLD,700.0,330.0,390.0,AA,BB,BB,"Prologis, Inc."
+BA,210.0,225.0,210.0,B,B,B,Bangkok Airways Public Company Limited
+GS,555.0,310.0,344.0,A,BB,BB,"The Goldman Sachs Group, Inc."
+CAT,255.0,255.0,263.0,B,B,B,Caxton and CTP Publishers and Printers Limited
+DE,545.0,320.0,344.0,A,BB,BB,Deere & Company
+COP,420.0,308.0,543.0,BBB,A,BB,ConocoPhillips
+IBM,245.0,215.0,233.0,B,B,B,International Business Machines Corporation
+AMD,205.0,210.0,205.0,B,B,B,"Advanced Micro Devices, Inc."
+C,515.0,310.0,301.0,A,BB,BB,Citigroup Inc.
+AXP,210.0,205.0,227.0,B,B,B,American Express Company
+RTX,515.0,308.0,310.0,A,BB,BB,Raytheon Technologies Corporation
+HON,517.0,300.0,344.0,A,BB,BB,Honeywell International Inc.
+MDT,535.0,320.0,318.0,A,BB,BB,Medtronic plc
+CVS,545.0,318.0,307.0,A,BB,BB,CVS Health Corporation
+BMY,530.0,310.0,327.0,A,BB,BB,Bristol-Myers Squibb Company
+NEE,700.0,321.0,381.0,AA,BB,BB,"NextEra Energy, Inc."
+LOW,203.0,200.0,200.0,B,B,B,"Lowes Companies, Inc."
+UNP,278.0,205.0,242.0,B,B,B,Union Pacific Corporation
+PM,580.0,333.0,307.0,A,BB,BB,Philip Morris International Inc.
+LIN,60.0,275.0,240.0,DDD,B,B,Lindian Resources Limited
+UPS,510.0,240.0,301.0,A,BB,B,"United Parcel Service, Inc."
+SCHW,225.0,300.0,301.0,B,BB,BB,The Charles Schwab Corporation
+T,200.0,305.0,203.0,B,B,BB,AT&T Inc.
+MS,700.0,320.0,534.0,AA,A,BB,Morgan Stanley
+MCD,505.0,300.0,322.0,A,BB,BB,McDonalds Corporation
+DHR,550.0,300.0,347.0,A,BB,BB,Danaher Corporation
+MRK,500.0,300.0,302.0,A,BB,BB,"Merck & Co., Inc."
+CRM,265.0,205.0,227.0,B,B,B,"salesforce.com, inc."
+ABT,520.0,300.0,321.0,A,BB,BB,Abbott Laboratories
+ORCL,560.0,315.0,308.0,A,BB,BB,Oracle Corporation
+VZ,200.0,200.0,205.0,B,B,B,Verizon Communications Inc.
+TMO,520.0,265.0,330.0,A,BB,B,Thermo Fisher Scientific Inc.
+ACN,580.0,315.0,386.0,A,BB,BB,Accenture plc
+WFC,510.0,305.0,307.0,A,BB,BB,Wells Fargo & Company
+LLY,515.0,308.0,305.0,A,BB,BB,Eli Lilly and Company
+NKE,205.0,200.0,258.0,B,B,B,"NIKE, Inc."
+PEP,552.0,310.0,342.0,A,BB,BB,"PepsiCo, Inc."
+ABBV,510.0,309.0,344.0,A,BB,BB,AbbVie Inc.
+DIS,500.0,310.0,306.0,A,BB,BB,The Walt Disney Company
+KO,200.0,200.0,200.0,B,B,B,The Coca-Cola Company
+CVX,210.0,210.0,217.0,B,B,B,CEMATRIX Corporation
+PFE,500.0,300.0,301.0,A,BB,BB,Pfizer Inc.
+XOM,600.0,328.0,467.0,AA,BBB,BB,Exxon Mobil Corporation
+MA,210.0,215.0,230.0,B,B,B,Mastercard Incorporated
+BAC,235.0,260.0,367.0,B,BB,B,Bank of America Corporation
+HD,274.0,210.0,283.0,B,B,B,"The Home Depot, Inc."
+WMT,350.0,245.0,336.0,BB,BB,B,Walmart Inc.
+PG,560.0,310.0,422.0,A,BBB,BB,The Procter & Gamble Company
+JPM,605.0,340.0,326.0,AA,BB,BB,JPMorgan Chase & Co.
+UNH,500.0,300.0,300.0,A,BB,BB,UnitedHealth Group Incorporated
+JNJ,500.0,300.0,300.0,A,BB,BB,Johnson & Johnson
+V,501.0,305.0,306.0,A,BB,BB,Visa Inc.
