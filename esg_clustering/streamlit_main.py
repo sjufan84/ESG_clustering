@@ -3,14 +3,8 @@
 import pandas as pd
 import hvplot.pandas
 from pathlib import Path
-import datetime as dt
-import numpy as np
+from PIL import Image
 
-from sklearn.preprocessing import StandardScaler
-from sklearn.decomposition import PCA
-from sklearn.cluster import KMeans
-
-from utils.AlpacaFunctions import get_historical_dataframe, get_crypto_bars
 
 import hvplot.pandas
 import matplotlib.pyplot as plt
@@ -52,11 +46,12 @@ clusters_esg_df = pd.read_csv(Path('./dataframes/clusters_esg_df.csv'), infer_da
 
 
 # Plotting a scatter plot with sharpe ratios
-ret_var_new.hvplot.scatter(by='clusters', y='sharpe', hover_cols = ['Returns', 'Variance'])
+total_esg_plot = ret_var_new.hvplot.scatter(by='clusters', y='sharpe', x='', hover_cols = ['Name', 'Returns', 'Variance'], title = 'Asset Clusters and Sharpe Ratios')
 
 
 # Now we can plot our dataframe grouping by clusters and env, social scores, etc.
-clusters_esg_df.hvplot.scatter(by='clusters', y='sharpe', hover_cols = ['Name', 'environment_score', 'social_score', 'governance_score', 'Returns'], rot=90)
+clusters_esg_plot = clusters_esg_df.hvplot.scatter(by='clusters', y='sharpe', hover_cols = ['Name', 'environment_score', 'social_score', 'governance_score', 'Returns'],\
+title = 'Asset Clusters and Sharpe Ratio Plot')
 
 # Below we plot our cluster 0 assets using their environment scores and sharpe ratios... this will help us visualize 
 # and compare the cluster assets to find higher sharpe ratios combined with higher environent scores.  We could 
@@ -80,6 +75,10 @@ cluster4_df.hvplot.scatter(y='sharpe', x='environment_score', hover_cols = ['Nam
 
 # Beginning the script to format our Streamlit App
 
+st.set_page_config(
+    layout = 'wide'
+)
+
 def main():
 
     # Adding radio buttons to sidebar for site navigation
@@ -88,6 +87,12 @@ def main():
 
     if "page" not in st.session_state:
         st.session_state.page = 'Home'
+    if "current_ticker" not in st.session_state:
+        st.session_state.current_ticker = ''
+    if "cluster_view" not in st.session_state:
+        st.session_state.cluster_view = False
+    if "ticker_cluster" not in st.session_state:
+        st.session_state.ticker_cluster = 0
     
     
     if pages == 'Home':
@@ -112,14 +117,94 @@ def main():
     
     
     elif pages == 'Methodology':
+        # Brief overview of the tools and methods used in the application
         st.session_state.page = 'Methodology'
-        ''
+        st.subheader('Tools and Methodology')
+        st.markdown('#### KMeans Clustering')
+        st.markdown('In order to group our stocks according to their return profiles, we\
+        pulled historical price data going back 720 days from the Alpaca Trade API.\
+        We then converted our dataframe to percent change of returns in order to normalize\
+        the data so it could be clustered.  **It should be noted that typically KMeans\
+        takes in multiple features from each item to be clustered, thus this is in no way\
+        meant to be an example of what someone might ultimately feed the ML model to produce\
+        the most accurate predictions.**  It is simply a way to visualize and illustrate the\
+        possibilities that exist when using unsupervised learning to cluster stock data.\
+        For more information on KMeans clustering from sci-kit learn, please visit their\
+        [website]("https://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html".')
+        st.markdown('In order to find the optimal number of clusters to use for our KMeans model,\
+        we utilized the elbow method.  The code can be found in the repository, but as illustrated below, the chart\
+        that is generated from this approach is assessed to find the "elbow" or point at which adding more clusters is\
+        no longer contributing to the accuracy or relevance of the model.  After charting we noticed an outlier,\
+        GE, and thus removed it from the dataset and re-ran the model to produce the clusters that were not skewed by it.')
+
+        # KMeans elbow plot
+        image = Image.open(Path('./charts/elbow_plot.png'))
+        st.image(image, caption='KMeans Elbow Plot')
+
+        st.markdown('#### ESG Scores')
+        st.markdown('In order to retrieve ESG data for our stocks, we utilized a [rapid API]("esg-environmental-social-governance-data.p.rapidapi.com".\
+        This is by no means an authoritative list and should not be regarded as such.  Again, these tools\
+        are just for illustrative purposes.')
+
 
     elif pages == 'Find and Compare Stocks':
-        ''
+        st.session_state.page = 'Find and Compare Stocks'
+        if st.session_state.cluster_view == False:
+
+            # Displaying a chart of all of our stocks clustered and plotted by Sharpe ratios
+            st.bokeh_chart(hv.render(total_esg_plot, backend='bokeh'), use_container_width=True)  
+
+            col1, col2 = st.columns(2)
+            with col1:
+                st.write('The above chart is obviously very crowded, but illustrates the way that the assets\
+                are clustered together, with the y-axis being their Sharpe ratios.  By hovering over each point\
+                you can see the ticker, name, returns, and ESG scores for each one. By selecting a stock or\
+                crypto currency below, you can drill down and view the asset plotted within its cluster and begin to\
+                compare to others within that particular grouping')
+
+            with col2:
+                st.markdown('**Select a ticker from the list below.  You may search the list by typing in\
+                the ticker:**')
+
+                # Create a form that takes in ticker, sets session state with ticker data, and then
+                # refreshes page with relevant populated data
+                ticker_list = list(ret_var_new.index)
+                
+                with st.form('tickerSelect'):
+                    input_ticker = st.selectbox(label = 'Select a ticker to compare', options = ticker_list)
+                    lookup_ticker = st.form_submit_button('Lookup Ticker')
+                    if lookup_ticker:
+                        st.session_state.current_ticker = input_ticker
+                        st.session_state.cluster_view = True
+                        ticker_cluster = ret_var_new.loc[st.session_state.current_ticker]['clusters'].astype(int)
+                        st.session_state.ticker_cluster = ticker_cluster
+                        st.experimental_rerun()
+                    
+        elif st.session_state.cluster_view == True:
+            # Displaying env score and sharpe ratio for current ticker as well as plotting
+            # current cluster data via scatter plot
+            cluster_df = pd.DataFrame(clusters_esg_df.loc[clusters_esg_df['clusters'] == st.session_state.ticker_cluster])
+            ticker_env_score = cluster_df.loc[st.session_state.current_ticker]['environment_score']
+            ticker_sharpe = cluster_df.loc[st.session_state.current_ticker]['sharpe']
+
+            st.markdown(f"Current ticker **{st.session_state.current_ticker}** is in Cluster  # **{st.session_state.ticker_cluster}**\
+            .  It's environment rating is {ticker_env_score} and it's Sharpe Ratio is {ticker_sharpe.round(2)}")
+
+            cluster_scatter = cluster_df.hvplot.scatter(y='sharpe', x='environment_score', height = 400,\
+            hover_cols = ['Name', 'environment_score', 'Returns'], rot=90, color='green',\
+            title = f'Cluster # {st.session_state.ticker_cluster} Environment Scores and Sharpe Ratios')
+            st.bokeh_chart(hv.render(cluster_scatter, backend='bokeh'))  
+
+
+        # Creating a select box and input box for asset selection
+        
+
+
                 
 if __name__ == "__main__":
     main()
 
 
 
+
+# %%
