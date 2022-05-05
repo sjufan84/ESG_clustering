@@ -145,7 +145,7 @@ def main():
                 # Create a form that takes in ticker, sets session state with ticker data, and then
                 # refreshes page with relevant populated data
                 with st.form('tickerSelect'):
-                    input_ticker = st.selectbox(label = 'Select a ticker to compare', options = ticker_list)
+                    input_ticker = st.selectbox(label = 'Select a ticker to compare (type to search tickers)', options = ticker_list)
                     lookup_ticker = st.form_submit_button('Lookup Ticker')
                     if lookup_ticker:
                         st.session_state.current_ticker = input_ticker
@@ -162,7 +162,7 @@ def main():
             with st.form('clusterDisplay'):
 
                 # Create a button to allow the user to compare another stock
-                input_ticker = st.selectbox(label = 'Compare a different asset:', options = ticker_list)
+                input_ticker = st.selectbox(label = 'Compare a different asset (type to search tickers):', options = ticker_list)
                 lookup_ticker = st.form_submit_button('Lookup Ticker')
                 if lookup_ticker:
                     st.session_state.current_ticker = input_ticker
