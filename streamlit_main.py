@@ -1,19 +1,13 @@
 # %%
 # Initial Imports
-from matplotlib.colors import _ColorMapping
 import pandas as pd
-import hvplot.pandas
 from pathlib import Path
 from PIL import Image
 
 
 import hvplot.pandas
-import matplotlib.pyplot as plt
-import plotly as pty
-import plotly.express as px
 import holoviews as hv
 hv.notebook_extension('bokeh')
-import matplotlib.pyplot as plt
 import streamlit as st
 
 
@@ -43,36 +37,11 @@ cluster3_df = pd.read_csv(Path('./dataframes/cluster3_df.csv'), infer_datetime_f
 cluster4_df = pd.read_csv(Path('./dataframes/cluster4_df.csv'), infer_datetime_format=True, parse_dates=True, index_col=[0])
 
 # Combined ESG with clusters, sharpe, std, annual returns
-clusters_esg_df = pd.read_csv(Path('./dataframes/clusters_esg_df.csv'), infer_datetime_format=True, parse_dates=True, index_col=[0]) 
+clusters_esg_df = pd.read_csv(Path('./dataframes/clusters_with_crypto.csv'), infer_datetime_format=True, parse_dates=True, index_col=[0]) 
 
 
 # Plotting a scatter plot with sharpe ratios
 total_esg_plot = ret_var_new.hvplot.scatter(by='clusters', y='sharpe', x='', hover_cols = ['Name', 'Returns', 'Variance'], title = 'Asset Clusters and Sharpe Ratios')
-
-
-# Now we can plot our dataframe grouping by clusters and env, social scores, etc.
-clusters_esg_plot = clusters_esg_df.hvplot.scatter(by='clusters', y='sharpe', hover_cols = ['Name', 'environment_score', 'social_score', 'governance_score', 'Returns'],\
-title = 'Asset Clusters and Sharpe Ratio Plot')
-
-# Below we plot our cluster 0 assets using their environment scores and sharpe ratios... this will help us visualize 
-# and compare the cluster assets to find higher sharpe ratios combined with higher environent scores.  We could 
-# easily do the same with social scores and governance scores.
-
-cluster0_df.hvplot.scatter(y='sharpe', x='environment_score', hover_cols = ['Name', 'environment_score', 'Returns'], rot=90)
-
-# Repeating the above process for cluster 1
-
-cluster1_df.hvplot.scatter(y='sharpe', x='environment_score', hover_cols = ['Name', 'environment_score', 'Returns'], rot=90)
-
-# Cluster 2 plot, bearing in mind ETH is in this cluster but does not have an env score 
-cluster2_df.hvplot.scatter(y='sharpe', x='environment_score', hover_cols = ['Name', 'environment_score', 'Returns'], rot=90)
-
-# Cluster 3 plot
-cluster3_df.hvplot.scatter(y='sharpe', x='environment_score', hover_cols = ['Name', 'environment_score', 'Returns'], rot=90)
-
-# Cluster 4 plot
-cluster4_df.hvplot.scatter(y='sharpe', x='environment_score', hover_cols = ['Name', 'environment_score', 'Returns'], rot=90)
-
 
 # Beginning the script to format our Streamlit App
 
@@ -94,6 +63,7 @@ def main():
         st.session_state.cluster_view = False
     if "ticker_cluster" not in st.session_state:
         st.session_state.ticker_cluster = 0
+        
     
     
     if pages == 'Home':
@@ -149,6 +119,12 @@ def main():
         This is by no means an authoritative list and should not be regarded as such.  Again, these tools\
         are just for illustrative purposes.')
 
+        # Description of Sharpe Ratio
+        st.markdown('#### About Sharpe Ratios')
+        st.markdown("In order to assess risk / return profiles of our assets, we utilize a common metric\
+        known as a **Sharpe Ratio**.  To learn more about Sharpe Ratios and how they are used and calculated\
+        visit Investopedia's Sharpe Ratio Page found [here.](https://www.investopedia.com/terms/s/sharperatio.asp)")
+
 
     elif pages == 'Find and Compare Stocks':
         st.session_state.page = 'Find and Compare Stocks'
@@ -183,22 +159,41 @@ def main():
         elif st.session_state.cluster_view == True:
             # Displaying env score and sharpe ratio for current ticker as well as plotting
             # current cluster data via scatter plot
-            with st.form('clusterDisplay'):
-                cluster_df = pd.DataFrame(clusters_esg_df.loc[clusters_esg_df['clusters'] == st.session_state.ticker_cluster])
-                ticker_env_score = cluster_df.loc[st.session_state.current_ticker]['environment_score']
-                ticker_sharpe = cluster_df.loc[st.session_state.current_ticker]['sharpe']
 
-                st.markdown(f"Current ticker **{st.session_state.current_ticker}** is in Cluster  # **{st.session_state.ticker_cluster}**\
-                .  Its environment rating is {ticker_env_score} and it's Sharpe Ratio is {ticker_sharpe.round(2)}.  Plot of cluster's\
-                environment scores and Sharpe ratios below (hover for more details):")
+            # Create form to allow the user to change to a different ticker
+            with st.form('clusterDisplay'):
+
+                # Create a button to allow the user to compare another stock
+                input_ticker = st.selectbox(label = 'Compare a different asset:', options = ticker_list)
+                lookup_ticker = st.form_submit_button('Lookup Ticker')
+                if lookup_ticker:
+                    st.session_state.current_ticker = input_ticker
+                    ticker_cluster = ret_var_new.loc[st.session_state.current_ticker]['clusters'].astype(int)
+                    st.session_state.ticker_cluster = ticker_cluster
+                    st.experimental_rerun()
+          
+            # Retrieving Sharpe Ratio and Return data for selected ticker
+            cluster_df = pd.DataFrame(clusters_esg_df.loc[clusters_esg_df['clusters'] == st.session_state.ticker_cluster])
+            ticker_env_score = cluster_df.loc[st.session_state.current_ticker]['environment_score']
+            ticker_sharpe = cluster_df.loc[st.session_state.current_ticker]['sharpe']
+            ticker_returns = cluster_df.loc[st.session_state.current_ticker]['Returns']
+
+            # Displaying Sharpe and Return data, creating select box to filter by Sharpe or Returns
+            st.markdown(f"Current ticker **{st.session_state.current_ticker}** is in Cluster  # **{st.session_state.ticker_cluster}**\
+            .  Its environment rating is {ticker_env_score}.  Its Sharpe Ratio is {ticker_sharpe.round(2)} and Cumulative Returns are\
+            {ticker_returns.round(2)}.")
+            risk_return_choice = st.selectbox('Select a metric to filter by:', options=['Sharpe Ratio',\
+            'Cumulative Returns'])
+
+            if risk_return_choice == 'Sharpe Ratio':
 
                 # Scatter plot of the cluster that the selected asset is in... env score and sharpe ratio
-                cluster_scatter = cluster_df.hvplot.scatter(y='sharpe', x='environment_score', height = 350, width=750,\
+                cluster_scatter_sharpe = cluster_df.hvplot.scatter(y='sharpe', x='environment_score', height = 350, width=750,\
                 hover_cols = ['Name', 'environment_score', 'Returns'], rot=90, color='green',\
                 title = f'Cluster # {st.session_state.ticker_cluster} Environment Scores and Sharpe Ratios')
-                st.bokeh_chart(hv.render(cluster_scatter, backend='bokeh'))  
+                st.bokeh_chart(hv.render(cluster_scatter_sharpe, backend='bokeh'))  
 
-                # Bar chart of all assets with an env score over 500
+                # Scatter of all assets' Sharpe Ratios with an env score over 500
                 st.markdown('**Below we drill down to those companies with environment scores over 500:**')
                 env_df = cluster_df.loc[cluster_df['environment_score'] >= 500]
                 env_cluster_scatter = env_df.hvplot.scatter(x='environment_score', y='sharpe', hover_color='red', hover_cols = ['Name', 'environment_score', 'Returns'], rot=90, title=f'Cluster {st.session_state.ticker_cluster} Environment Scores sorted by Sharpe ratios',\
@@ -210,14 +205,27 @@ def main():
                 values by that column:**')
                 st.dataframe(cluster_df)
 
-                # Create a button to allow the user to compare another stock
-                input_ticker = st.selectbox(label = 'Compare a different asset:', options = ticker_list)
-                lookup_ticker = st.form_submit_button('Lookup Ticker')
-                if lookup_ticker:
-                    st.session_state.current_ticker = input_ticker
-                    ticker_cluster = ret_var_new.loc[st.session_state.current_ticker]['clusters'].astype(int)
-                    st.session_state.ticker_cluster = ticker_cluster
-                    st.experimental_rerun()
+            elif risk_return_choice == 'Cumulative Returns':
+
+                # Scatter plot of the cluster that the selected asset is in... env score and Cumulative Returns
+                cluster_scatter_returns = cluster_df.hvplot.scatter(y='Returns', x='environment_score', height = 350, width=750,\
+                hover_cols = ['Name', 'environment_score', 'Returns'], rot=90, color='red',\
+                title = f'Cluster # {st.session_state.ticker_cluster} Environment Scores and Returns')
+                st.bokeh_chart(hv.render(cluster_scatter_returns, backend='bokeh'))  
+
+                # Scatter of all assets' Cumulative Returns with an env score over 500
+                st.markdown('**Below we drill down to those companies with environment scores over 500:**')
+                env_df = cluster_df.loc[cluster_df['environment_score'] >= 500]
+                env_cluster_scatter = env_df.hvplot.scatter(x='environment_score', y='sharpe', hover_color='red', hover_cols = ['Name', 'environment_score', 'Returns'], rot=90, title=f'Cluster {st.session_state.ticker_cluster} Environment Scores sorted by Sharpe ratios',\
+                height=350, width=750, legend=True)
+                st.bokeh_chart(hv.render(env_cluster_scatter, backend='bokeh'))
+
+                # Display dataframe with asset's cluster
+                st.markdown('**Below is a table of all assets within this cluster.  Click on column headers to sort\
+                values by that column:**')
+                st.dataframe(cluster_df)
+
+            
 
     elif pages == 'Data and Tables':
         # Establish page state, introduce page layout
@@ -249,14 +257,35 @@ def main():
         elif data_choice == 'Cluster 4 Data':
             st.dataframe(cluster4_df)
 
-        
-        # Establishing what data will be displayed depending on button selection
-        if data_choice == 'Stock and Crypto Returns':
-            st.subheader('Stock and Crypto Returns')
-            st.dataframe(combined_returns_df)
+    elif pages == 'Plots':
+        st.session_state.page = 'Plots'
+        # Establishing plot variables
+        cluster0_plot = Image.open(Path('./charts/cluster0_plot.png'))
+        cluster1_plot = Image.open(Path('./charts/cluster1_plot.png'))
+        cluster2_plot = Image.open(Path('./charts/cluster2_plot.png'))
+        cluster3_plot = Image.open(Path('./charts/cluster3_plot.png'))
+        cluster4_plot = Image.open(Path('./charts/cluster4_plot.png'))
+        initial_esg_plot = Image.open(Path('./charts/initial_esg_scatter.png'))
+        initial_sharpe_plot = Image.open(Path('./charts/initial_sharpe_cluster.png'))
+        plot_list = ['Cluster 0 Plot', 'Cluster 1 Plot', 'Cluster 2 Plot', 'Cluster 3 Plot', 'Cluster 4 Plot', 'Initial ESG Plot', 'Initial Sharpe Plot']
 
+        # Multiselect to display plots
+        plot_select = st.selectbox('Select which plot(s) to display', options = plot_list)
+        if plot_select == 'Cluster 0 Plot':
+            st.image(cluster0_plot)
+        elif plot_select == 'Cluster 1 Plot':
+            st.image(cluster1_plot)
+        elif plot_select == 'Cluster 2 Plot':
+            st.image(cluster2_plot)
+        elif plot_select == 'Cluster 3 Plot':
+            st.image(cluster3_plot)
+        elif plot_select == 'Cluster 4 Plot':
+            st.image(cluster4_plot)
+        elif plot_select == 'Initial ESG Plot':
+            st.image(initial_esg_plot)
+        else:
+            st.image(initial_sharpe_plot)
         
-
 if __name__ == "__main__":
     main()
 

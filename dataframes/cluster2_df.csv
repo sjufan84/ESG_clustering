@@ -1,3 +1,4 @@
-,environment_score,governance_score,social_score,environment_grade,social_grade,governance_grade,Name,Returns,Variance,clusters,sharpe
-CZR,285.0,200.0,208.0,B,B,B,"Caesars Entertainment, Inc.",1.6063771258996562,1.5826608293063587,2.0,1.014985078390859
-CTRA,500.0,300.0,282.0,A,B,BB,Coterra Energy Inc.,1.5001531508742445,0.9178297877175273,2.0,1.6344568142692857
+,environment_score,governance_score,social_score,environment_grade,social_grade,governance_grade,Name,Returns,Variance,clusters,sharpe,Ticker
+CZR,285.0,200.0,208.0,B,B,B,"Caesars Entertainment, Inc.",1.6063771258996562,1.5826608293063589,2.0,1.014985078390859,CZR
+CTRA,500.0,300.0,282.0,A,B,BB,Coterra Energy Inc.,1.5001531508742445,0.9178297877175272,2.0,1.6344568142692857,CTRA
+ETHUSD,0.0,0.0,0.0,0,0,0,0,1.7322659207849271,0.9307065647179557,2.0,1.8612374581347009,ETHUSD
