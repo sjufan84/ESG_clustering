@@ -1,4 +1,4 @@
 holoviews
 hvplot
 panel
-hvplot.pandas
+
