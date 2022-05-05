@@ -183,6 +183,8 @@ def main():
             risk_return_choice = st.selectbox('Select a metric to filter by:', options=['Sharpe Ratio',\
             'Cumulative Returns'])
 
+            st.markdown('#### Hover over points in plots for detailed asset information')
+
             if risk_return_choice == 'Sharpe Ratio':
 
                 # Scatter plot of the cluster that the selected asset is in... env score and sharpe ratio
