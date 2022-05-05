@@ -218,6 +218,43 @@ def main():
                     ticker_cluster = ret_var_new.loc[st.session_state.current_ticker]['clusters'].astype(int)
                     st.session_state.ticker_cluster = ticker_cluster
                     st.experimental_rerun()
+
+    elif pages == 'Data and Tables':
+        # Establish page state, introduce page layout
+        st.session_state.page = 'Data and Tables'
+        st.subheader('Data and Tables')
+        st.markdown('It is important to keep in mind that some of this data may be **archived**, so do not assume that all data is current.')
+
+        # Overview and select box with data choices
+        data_choice = st.selectbox('Select a dataset to display below:', options = ['Stock and Crypto Price Data', 'Risk / Return Metrics with Clusters',\
+        'ESG Scores', 'Returns Percent Change', 'Cluster 0 Data', 'Cluster 1 Data', 'Cluster 2 Data',\
+        'Cluster 3 Data', 'Cluster 4 Data'])
+        
+        if data_choice == 'Stock and Crypto Price Data':
+            st.dataframe(combined_returns_df)
+        elif data_choice == 'Risk / Return Metrics with Clusters':
+            st.dataframe(ret_var_new)
+        elif data_choice == 'ESG Scores':
+            st.dataframe(clusters_esg_df)
+        elif data_choice == 'Returns Percent Change':
+            st.dataframe(pct_change_df)
+        elif data_choice == 'Cluster 0 Data':
+            st.dataframe(cluster0_df)
+        elif data_choice == 'Cluster 1 Data':
+            st.dataframe(cluster1_df)
+        elif data_choice == 'Cluster 2 Data':
+            st.dataframe(cluster2_df)
+        elif data_choice == 'Cluster 3 Data':
+            st.dataframe(cluster3_df)
+        elif data_choice == 'Cluster 4 Data':
+            st.dataframe(cluster4_df)
+
+        
+        # Establishing what data will be displayed depending on button selection
+        if data_choice == 'Stock and Crypto Returns':
+            st.subheader('Stock and Crypto Returns')
+            st.dataframe(combined_returns_df)
+
         
 
 if __name__ == "__main__":
