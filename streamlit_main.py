@@ -4,8 +4,6 @@ import pandas as pd
 from pathlib import Path
 from PIL import Image
 
-
-import hvplot.pandas
 import holoviews as hv
 hv.notebook_extension('bokeh')
 import streamlit as st
