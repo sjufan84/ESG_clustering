@@ -1,2 +1,2 @@
 holoviews
-hvplot.pandas
+hvplot
