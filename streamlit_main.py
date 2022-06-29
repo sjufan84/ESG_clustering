@@ -51,7 +51,7 @@ def main():
 
     # Adding radio buttons to sidebar for site navigation
     st.sidebar.title('Explore')
-    pages = st.sidebar.radio(label = '', options=['Home', 'Methodology', 'Find and Compare Stocks', 'Data and Tables', 'Plots'])
+    pages = st.sidebar.radio(label = '', options=['Home', 'Methodology', 'Find and Compare Stocks', 'Data and Tables'])
 
     if "page" not in st.session_state:
         st.session_state.page = 'Home'
@@ -257,35 +257,7 @@ def main():
         elif data_choice == 'Cluster 4 Data':
             st.dataframe(cluster4_df)
 
-    elif pages == 'Plots':
-        st.session_state.page = 'Plots'
-        # Establishing plot variables
-        cluster0_plot = Image.open(Path('./charts/cluster0_plot.png'))
-        cluster1_plot = Image.open(Path('./charts/cluster1_plot.png'))
-        cluster2_plot = Image.open(Path('./charts/cluster2_plot.png'))
-        cluster3_plot = Image.open(Path('./charts/cluster3_plot.png'))
-        cluster4_plot = Image.open(Path('./charts/cluster4_plot.png'))
-        initial_esg_plot = Image.open(Path('./charts/initial_esg_scatter.png'))
-        initial_sharpe_plot = Image.open(Path('./charts/initial_sharpe_cluster.png'))
-        plot_list = ['Cluster 0 Plot', 'Cluster 1 Plot', 'Cluster 2 Plot', 'Cluster 3 Plot', 'Cluster 4 Plot', 'Initial ESG Plot', 'Initial Sharpe Plot']
-
-        # Multiselect to display plots
-        plot_select = st.selectbox('Select which plot(s) to display', options = plot_list)
-        if plot_select == 'Cluster 0 Plot':
-            st.image(cluster0_plot)
-        elif plot_select == 'Cluster 1 Plot':
-            st.image(cluster1_plot)
-        elif plot_select == 'Cluster 2 Plot':
-            st.image(cluster2_plot)
-        elif plot_select == 'Cluster 3 Plot':
-            st.image(cluster3_plot)
-        elif plot_select == 'Cluster 4 Plot':
-            st.image(cluster4_plot)
-        elif plot_select == 'Initial ESG Plot':
-            st.image(initial_esg_plot)
-        else:
-            st.image(initial_sharpe_plot)
-        
+    
 if __name__ == "__main__":
     main()
 
