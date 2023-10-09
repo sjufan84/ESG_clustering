@@ -1,6 +1,7 @@
 # Special Note to those newly starring / forking -- I am interested in opening this project up to contributors... I haven't had time to maintain it, but since it looks like there is some interest lately, I would love to work together to build it out more.  Please e-mail me [here](mailto:dave_thomas@enoughwebapp.com) if you are interested.  Thank you!
 
-Dave
+
+
 
 
 ## ESG Stock and Crypto Clustering  
